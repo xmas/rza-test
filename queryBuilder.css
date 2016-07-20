@@ -1,0 +1,396 @@
+body {
+	color: #f5f5f5;
+	font-family: 'Arimo', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+}
+
+.editor-button-set {
+	display: inline-block;
+	float: right;
+}
+
+.editor-button {
+	padding-right : 5px;
+	height: 22px;
+	width: 22px;
+}
+
+/* customize borders to avoid double-borders around inner-layouts */
+.ui-layout-pane {
+	border:			0; /* override layout-default-latest.css */
+}
+.ui-layout-pane-center	{
+	border-left:	0;
+	border-right:	0;
+	}
+
+/* add shading to outer sidebar-panes */
+.outer-west {
+	background-color: #46464E;
+	min-width: 476px;
+	border-right: 2px solid #5A5A60;
+}
+
+.inner-north {
+	background-color: #46464E;
+	padding: 10px 0 0 20px;
+}
+
+.inner-center {
+	background-color: #363540;
+	overflow-y: auto;
+}
+
+/*
+ *	customize borders on panes/resizers to make pretty
+ */
+.ui-layout-pane-east		{ border-left:		0; }
+.ui-layout-pane-north		{ border-bottom:	0; }
+.ui-layout-pane-south		{ border-top:		0; }
+/*
+ *	add borders to resizers when pane is 'closed'
+ *
+ *.ui-layout-resizer-closed	{ border:			1px solid #BBB; }
+ */
+/*
+ *	show both borders when the resizer is 'dragging'
+ */
+.ui-layout-resizer-west-dragging ,
+.ui-layout-resizer-east-dragging {
+	border-left:		1px solid #BBB;
+	border-right:		1px solid #BBB;
+}
+.ui-layout-resizer-north-dragging ,
+.ui-layout-resizer-south-dragging {
+	border-top:		1px solid #BBB;
+	border-bottom:	1px solid #BBB;
+}
+
+.show-left-pane {
+	margin: 0 10px;
+}
+
+.select2-results__option {
+	background-color: #363540;
+	color: #f5f5f5;
+}
+
+#field-builders-div .select2-container--default .select2-selection--multiple {
+	background-color: #6B6B70;
+	border-style: none;
+}
+
+#field-builders-div .select2-container--default .select2-selection--multiple .select2-selection__choice {
+	background-color: #363540;
+}
+
+#field-builders-div .select2-header {
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+#field-builders-div .select2-field-name {
+	padding-left: 10px;
+}
+
+html, body{
+	height: 100%;
+}
+
+.builder-header-table {
+	display: table;
+	width: 100%;
+	height: 155px;
+	vertical-align: middle;
+}
+
+.builder-header-icon {
+	display: table-cell;
+	width: 86px;
+	vertical-align: top;
+}
+
+.builder-header-title {
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	width: auto;
+	height: 100%;
+}
+
+.builder-header-title-wrap {
+	padding-top: 29px;
+}
+
+.builder-header-title-mask {
+	font-weight: 700;
+	color: white;
+	font-size: 28px;
+	font-family: 'Arimo', sans-serif;
+}
+
+.builder-header-icon-wrap {
+	padding: 1em;
+}
+
+.builder-header-close-wrap{
+	padding-right: 33px;
+	padding-top: 33px;
+}
+
+.builder-header-action {
+	display: table-cell;
+	text-align: right;
+	width: 7rem;
+	vertical-align: top;
+}
+
+#global-selector-container {
+	padding: 0 25px 0 25px;
+}
+
+.selector-field {
+	width: 100%;
+}
+
+.remove-icon {
+	float: right;
+}
+
+.success-icon {
+	display: none;
+	float: right;
+}
+
+.error-icon {
+	display: none;
+	float: right;
+}
+
+.drag-handle-icon {
+	display: inline-block;
+}
+
+.list-container {
+	display: inline-block;
+}
+
+.query-name-div {
+	display: inline-block;
+}
+
+
+.select2-results__group {
+	color: #f5f5f5;
+	font-size: 24px;
+	font-weight: 400;
+	padding-left: 22px;
+}
+
+.select2-results__item {
+	font-size: 24px;
+	font-weight: 400;
+	padding-left: 50px;
+}
+
+.select2-plus-sign {
+	height: 20px;
+	width: 20px;
+}
+
+.right {
+	display: inline-block;
+	float: right;
+}
+
+.select2-action {
+	font-weight: 200;
+	text-align: right;
+	padding-right: 5px;
+}
+
+#results-separator {
+	width: 97%;
+	height: 1em;
+	background-color: #5A5A60;
+	padding: 15px 0 15px 20px;
+	margin: 0;
+}
+
+#preview-grid {
+	margin-left: 10px;
+}
+
+.add-new-field {
+	width: 90%;
+	height: 30px;
+	display: inline-block;
+	border: 1px dashed #f5f5f5;
+	margin: 8px 8px 0 8px;
+}
+
+
+#field-builders-div .select2-selection__mathoperator,.select2-selection__constant {
+	background-color: #292731;
+	line-height: 48px;
+	height: 52px;
+	min-width: 2em;
+	vertical-align: middle;
+	text-align: center;
+	border-style: none;
+	border-radius: 6px;
+}
+
+#field-builders-div .select2-container--default .select2-selection--multiple .select2-selection__choice {
+	background-color: #292731;
+	border-style: none;
+	min-width: 10em;
+	border-radius: 6px;
+}
+
+#field-builders-div .select2-table-name {
+	display:inline-block;
+	color: #CFCFCF;
+	font-size: 12px;
+	vertical-align: baseline;
+	line-height: .5em;
+	padding-left: 6px;
+}
+
+#field-builders-div .token-fx {
+	height: 2em;
+	float: right;
+	padding-left: 10px;
+	padding-top: 8px;
+}
+
+#field-builders-div .token-field {
+	display: inline-block;
+	padding-top: 5px;
+	padding-left: 5px;
+	float: left;
+}
+
+#field-builders-div .select2-selection__choice__remove {
+	float: left;
+	width: 15px;
+	height: 15px;
+	padding-top: 7px;
+	vertical-align:top;
+}
+
+#field-builders-div .token-title {
+	display: inline-block;
+	font-size: 22px;
+}
+
+#field-builders-div .token-table {
+	position: relative;
+	top: -5px;
+}
+
+#field-builders-div .select2-container--default .select2-search--inline .select2-search__field {
+	line-height: .5em;
+	height: 52px;
+	min-width: 4em;
+	border: 1px dashed #c5c5c5;
+}
+
+.constrain-button-div {
+	margin: -8px 10px;
+	display: inline-block;
+}
+
+#results-separator .buttons {
+	float: right;
+	position: relative;
+	top: -9px;
+}
+
+#constraints-div {
+	display: none;
+	background-color: #363540;
+}
+
+#download-button-div {
+	display: inline-block;
+}
+
+#download-button-button {
+	width: 200px !important;
+	color: #F5F5F5;
+}
+
+#download-button-button .ui-selectmenu-text {
+	padding: 0 0 0 5px;
+	background-color: #7E7E83;
+	font-family: 'Arimo', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+}
+
+#download-button-div .ui-state-default .ui-icon {
+	background-image: url("https://54.187.187.242:8443/assets/searchBasedQuery/ui-icons_rezza_256x240.png")
+}
+
+#download-button-div .ui-selectmenu-button span.ui-icon {
+	right: 0.1em;
+	margin-top: -6px;
+}
+
+.ui-selectmenu-menu .ui-menu .ui-menu-item {
+	background-color: #7E7E83;
+	font-family: 'Arimo', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+}
+
+.add-condition {
+	width: 90%;
+	height: 30px;
+	display: inline-block;
+	border: 1px dashed #f5f5f5;
+	margin: 8px 8px 0 8px;
+	background: transparent;
+}
+
+.apply-constraints-div {
+	margin: -30px 10px;
+	display: block;
+	float: right;
+}
+
+#preview-grid-div {
+	width: 100%;
+	height: 100%;
+	background-color: #46464E;
+	padding-top: 10px;
+}
+
+.constraints-button {
+	color: white;
+	padding: 6px 8px 6px 8px;
+	border: none;
+}
+
+.constraints-button > * {
+	vertical-align: middle;
+	font-family: 'Arimo', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+}
+
+.constraints-button.no-constraints {
+	background-color: #7E7E83;
+}
+
+.constraints-button.with-constraints {
+	background-color: #ed1652;
+	display: none;
+}
+
+.constraints-button.no-constraints:hover {
+	background-color: red;
+
+}
